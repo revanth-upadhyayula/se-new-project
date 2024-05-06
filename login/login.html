@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+<title>EtherealMint-Login</title>
+</head>
+<body>
+    <div class="hero">
+            <img src="logo.png" class="logo" alt="Logo">
+        
+        <!-- <nav>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Team Members</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <button type="button"><a href="register.jsp">Register</a></button>
+        </nav> -->
+    </div>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="login-form">
+                    <h2>Welcome Back</h2>
+                    <p>Welcome Back, Please enter Your details</p>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline" class="icon"></ion-icon>
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline" class="icon"></ion-icon>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                        <div class="forget">
+                            <label for="remember"><input type="checkbox" id="remember">Remember Me</label>
+                            <a href="#">Forget Password?</a>
+                        </div>
+                        <button type="submit">Log in</button>
+                        <div class="register">
+                            <p>Don't have an account? <a href="register.html" target="_blank">Register</a></p>
+                        </div>
+                </form>
+            </div>
+        </div>
+        <div class="video-container">
+            <video id="background-video" autoplay loop muted>
+                <source src="0505(2).mp4" type="video/mp4">
+            </video>
+        </div>
+        <script>
+            const passwordInput = document.getElementById('password');
+            const video = document.getElementById('background-video');
+            const loopStartTime = 3; // Start time in seconds
+            const loopEndTime = 6; // End time in seconds
+    
+            video.addEventListener('timeupdate', function() {
+                if (video.currentTime >= loopEndTime) {
+                    video.currentTime = loopStartTime;
+                }
+            });
+            
+        </script>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

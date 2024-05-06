@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.logo {
+    padding-left: 260px;
+    width: 275px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    color: #3e79e3; /* Updated logo color */
+    font-size: 28px;
+    margin-top: -92px;
+    margin-left: -115px;
+    padding-right: 182px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10%;
+    background-color: #fff; /* Updated background color to white */
+    height: 45.4px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    color: #3e79e3; /* Updated link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: darkblue;
+    transition: .3s;
+}
+
+nav button {
+    width: 19%;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+section {
+    display: flex;
+    justify-content: flex-start; /* Updated to move login section to the left */
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f4fdfe; /* Updated background color to white */
+}
+
+.form-box {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: #f4fdfe; /* Updated background color to white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Updated to align content vertically */
+}
+
+h2 {
+    font-size: 2em;
+    color: #3e79e3; /* Updated heading color */
+    text-align: center;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox {
+    position: relative;
+    margin: 30px 0 0 0;
+    width: 100%; /* Updated width to 80% */
+    border-bottom: 2px solid #3e79e3; /* Updated border color */
+}
+
+input:focus ~ label,
+	input:valid ~ label
+	{
+		top:-5px;
+		
+	}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #3e79e3; /* Updated text color */
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #3e79e3;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .7s;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #3e79e3;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: 10px 0 10px 24px;
+    font-size: .9em;
+    color: #3e79e3;
+}
+
+.forget label a {
+    color: #3e79e3;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%; /* Updated width to 80% */
+    height: 40px;
+    border-radius: 40px;
+    background: #3e79e3; /* Updated button background color */
+    color: #fff; /* Updated button text color */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 10px 0 10px 2px;
+}
+
+.login {
+    font-size: .9em;
+    color: #3e79e3;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.login p a {
+    text-decoration: none;
+    color: #3e79e3;
+    font-weight: 600;
+}
+
+.login p a:hover {
+    color: #173e87;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 100%;
+}
+
+#background-video {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+}

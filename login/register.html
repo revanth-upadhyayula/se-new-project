@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="register.css">
+<title>EtherealMint - Register</title>
+</head>
+<body>
+    <div class="hero">
+        <img src="logo.png" class="logo" alt="Logo">
+    </div>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form id="register-form">
+                    <h2>Create an Account</h2>
+                    <p>Please register down below</p>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="confirm-password" required>
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <button type="submit">Register</button>
+                    <div class="login">
+                        <p>Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="video-container">
+            <video id="background-video" autoplay loop muted>
+                <source src="login.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+    <script>
+        const passwordInput = document.getElementById('password');
+        const video = document.getElementById('background-video');
+        const loopStartTime = 2; // Start time in seconds
+        const loopEndTime = 10; // End time in seconds
+
+        video.addEventListener('timeupdate', function() {
+            if (video.currentTime >= loopEndTime) {
+                video.currentTime = loopStartTime;
+            }
+        });
+        
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="register.js"></script>
+</body>
+</html>
